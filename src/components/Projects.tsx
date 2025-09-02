@@ -5,52 +5,70 @@ const Projects = () => {
   const projects = [
     {
       title: 'Record Storage System',
-      description: 'A record Storage platform that stores with end to end encryption, a decent landing page and a taylored profile for the user. Built with React, Node.js, and PostgreSQL. Features real-time collaboration, advanced analytics, and custom integrations.',
+      description:
+        'A record Storage platform that stores with end to end encryption, a decent landing page and a taylored profile for the user. Built with React, Node.js, and PostgreSQL. Features real-time collaboration, advanced analytics, and custom integrations.',
       image: 'RcordStorageApp.jpeg',
       tags: ['React', 'Node.js', 'Firebase', 'Firebase Firestore', 'TypeScript'],
       liveUrl: '',
-      githubUrl: ''
+      githubUrl:
+        'https://github.com/Moeez-Ur-Rehman/Working-of-my-portfolio-project/blob/main/README.md',
     },
     {
       title: 'Nutri Care Pro',
-      description:'Developed an AI agent to to get the diet suggestion for a patient, with end to end authentication, health reminder and weekly updates on how to maintain a healthy diet',
+      description:
+        'Developed an AI agent to to get the diet suggestion for a patient, with end to end authentication, health reminder and weekly updates on how to maintain a healthy diet',
       image: 'NutritionAPP.jpeg',
-      tags: ['React', 'Python Django', 'Model Training', 'Dataset Creation', 'Firebase','Agentic AI'],
+      tags: [
+        'React',
+        'Python Django',
+        'Model Training',
+        'Dataset Creation',
+        'Firebase',
+        'Agentic AI',
+      ],
       liveUrl: '',
-      githubUrl: ''
+      githubUrl:
+        'https://github.com/Moeez-Ur-Rehman/Working-of-my-portfolio-project/blob/main/README.md',
     },
     {
       title: 'Start Trading LLC website',
-      description: 'A world class design landing page for a trading company,with smooth transitions and animations.',
+      description:
+        'A world class design landing page for a trading company,with smooth transitions and animations.',
       image: 'TradingWebsite.jpg',
       tags: ['Typescript', 'Javascript', 'Tailwind CSS', 'CPanel'],
       liveUrl: 'https://starttradingllc.com/',
-      githubUrl: ''
+      githubUrl: '',
     },
     {
       title: 'Task Tracking App',
-      description: 'A full Stack task tracking system with end to end authentication, user profiles, and a sleek UI. Built with React, Node.js, and MongoDB. Features real-time updates, and smooth workflow',
+      description:
+        'A full Stack task tracking system with end to end authentication, user profiles, and a sleek UI. Built with React, Node.js, and MongoDB. Features real-time updates, and smooth workflow',
       image: 'TaskTrackingAPP.jpeg',
-      tags: ['React',  'Node.js', 'MongoDB', 'Express'],
+      tags: ['React', 'Node.js', 'MongoDB', 'Express'],
       liveUrl: '',
-      githubUrl: ''
+      githubUrl:
+        'https://github.com/Moeez-Ur-Rehman/Working-of-my-portfolio-project/blob/main/README.md',
     },
     {
       title: 'Movie Review Sentiment Analysis Model',
-      description: 'Machine Learning Model for sentiment analysis on movie reviews. Achieved 92% accuracy using NLP techniques and TensorFlow.',
+      description:
+        'Machine Learning Model for sentiment analysis on movie reviews. Achieved 92% accuracy using NLP techniques and TensorFlow.',
       image: 'MovieReviewModel.jpeg',
       tags: [, 'Python', 'TensorFlow', 'NLP', 'Pandas', 'NumPy'],
       liveUrl: '',
-      githubUrl: ''
+      githubUrl:
+        'https://github.com/Moeez-Ur-Rehman/Working-of-my-portfolio-project/blob/main/README.md',
     },
     {
       title: 'Chess Game on unity',
-      description: 'A 3D chess game with AI opponent, two-player mode, and intuitive controls. Developed using Unity and C#.',
+      description:
+        'A 3D chess game with AI opponent, two-player mode, and intuitive controls. Developed using Unity and C#.',
       image: 'ChessGame.jpeg',
       tags: ['Unity', 'C#', 'Game Development', '3D Modeling'],
       liveUrl: '',
-      githubUrl: ''
-    }
+      githubUrl:
+        'https://github.com/Moeez-Ur-Rehman/Working-of-my-portfolio-project/blob/main/README.md',
+    },
   ];
 
   return (
@@ -62,9 +80,9 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            A selection of projects that showcase my skills in web development, 
-            design, and problem-solving. Each project represents a unique challenge 
-            and creative solution.
+            A selection of projects that showcase my skills in web development,
+            design, and problem-solving. Each project represents a unique
+            challenge and creative solution.
           </p>
         </div>
 
@@ -80,26 +98,8 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 right-4 flex gap-3">
-                    <a
-                      href={project.liveUrl}
-                      className="flex items-center gap-2 px-3 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white hover:bg-white/30 transition-colors duration-200"
-                    >
-                      <ExternalLink size={16} />
-                      Live
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      className="flex items-center gap-2 px-3 py-2 bg-white/20 backdrop-blur-sm rounded-lg text-white hover:bg-white/30 transition-colors duration-200"
-                    >
-                      <Github size={16} />
-                      Code
-                    </a>
-                  </div>
-                </div>
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-amber-600 transition-colors duration-300">
                   {project.title}
@@ -120,6 +120,20 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* ✅ "All My Projects" link at the bottom */}
+        <div className="text-center mt-12">
+          <a
+            href="https://github.com/Moeez-Ur-Rehman"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-amber-600 font-medium hover:text-amber-800 transition-colors duration-300"
+          >
+            <Github className="w-5 h-5" />
+            View All My Projects
+            <ExternalLink className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>
